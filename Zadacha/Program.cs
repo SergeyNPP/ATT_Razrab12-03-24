@@ -7,19 +7,42 @@ Console.WriteLine("Теперь введите значения");
 
 string[] array = new string[num];
 for (int i = 0; i < num; i++)  
-    array[i]= Console.ReadLine (); 
+    array[i]= Console.ReadLine ();
+            
 
 Console.WriteLine("Сейчас мы посмотрим, сколько вы ввели трехзначных элементов в наш массив");
 Console.WriteLine("Смотрите");
-
-void PrintArray(int[] array)                       //<--вывод данного массива на экран
-{
-    int count = array.Length;                      //Получение количества элементов 
-
-    for (int i = 0; i < count; i++)
+int j = 0;
+for (int i = 0; i < num; i++)
+    if(array[i].Length <=3)
     {
-        Console.Write($"{array[i]} ");
+        array[j]= array[i];
+        j++;
     }
-    Console.WriteLine();
-}
-PrintArray(NewArr);
+
+// for (int j = 0; j < num; j++)
+
+//     string Metod4(int count, string array[i]) //char C символ  (си)
+//         {
+//         int i = 0; 
+//         string result = string.Empty;
+
+//         while (i<count)
+//         {
+//             result = result + TextF2;
+//             i++;
+//         }
+//         return result;
+//         }
+
+// // string s = array[];
+// // char[] a = s.array();
+
+// // string str = "Собака";
+
+// // foreach(char c in str)
+// // {
+// //    Console.WriteLine(c);
+// // }
+
+// // Console.ReadLine();
