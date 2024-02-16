@@ -32,7 +32,7 @@ for (int j = 0; j < count; )
             {
                 arr[j]=array[i];
                 Console.Write(arr[j]);
-                 Console.Write(" ");
+                Console.Write(" ");
                 j++;
             }
              
